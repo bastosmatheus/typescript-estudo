@@ -5,6 +5,7 @@ class Database {
         this.host = host;
         this.user = user;
     }
+    // factory method (quando um método de uma classe cria um novo objeto)
     static connection(host, user) {
         if (Database.database) {
             return Database.database;
