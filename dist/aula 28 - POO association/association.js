@@ -29,11 +29,11 @@ class Pen extends Tools {
         console.log(`pen ${this.name} is writing.`);
     }
 }
-class TypeWriter extends Tools {
-    write() {
-        console.log(`typewriter ${this.name} is typing.`);
-    }
-}
+// class TypeWriter extends Tools {
+//   write(): void {
+//     console.log(`typewriter ${this.name} is typing.`);
+//   }
+// }
 const pen = new Pen("Bic");
 const writer = new Writer("Matheus");
 writer.tool = pen;

@@ -34,11 +34,11 @@ class Pen extends Tools {
   }
 }
 
-class TypeWriter extends Tools {
-  write(): void {
-    console.log(`typewriter ${this.name} is typing.`);
-  }
-}
+// class TypeWriter extends Tools {
+//   write(): void {
+//     console.log(`typewriter ${this.name} is typing.`);
+//   }
+// }
 
 const pen = new Pen("Bic");
 const writer = new Writer("Matheus");
