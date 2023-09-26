@@ -1,7 +1,6 @@
-"use strict";
 // getters (basicamente, da acesso a uma propriedade dentro de uma classe já instanciada. Mesmo que use private, com o get da p acessar.)
 // existem dois tipos de declaração das funções get e set.
-class Game {
+export class Game {
     constructor(nameOfGame, yearLaunch, _gameCategory) {
         this.nameOfGame = nameOfGame;
         this.yearLaunch = yearLaunch;

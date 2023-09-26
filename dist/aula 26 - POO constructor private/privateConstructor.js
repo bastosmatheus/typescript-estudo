@@ -1,6 +1,5 @@
-"use strict";
 // Singleton / construtor privado. Nesse exemplo de database, quero criar apenas uma conexão, então não da p deixar as instancias dessa classe usar esse recurso.
-class Database {
+export class Database {
     constructor(host, user) {
         this.host = host;
         this.user = user;

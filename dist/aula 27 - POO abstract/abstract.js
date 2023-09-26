@@ -1,6 +1,5 @@
-"use strict";
 // classes abstratas só podem ser instanciadas a partir de uma subclasse, é como se fosse um contrato, pós assinado tem que ser cumprido (se herda de character, então tem que existir dentro do projeto).
-class Character {
+export class Character {
     constructor(life, attack, name) {
         this.life = life;
         this.attack = attack;
@@ -12,7 +11,7 @@ class Character {
         console.log(`${character.emoji} - ${character.name} receiving an attack. Now is with ${character.life} of life. ${this.name} was who attacked.`);
     }
 }
-class Hero extends Character {
+export class Hero extends Character {
     constructor() {
         super(...arguments);
         this.emoji = `\u{1F9DD}`;
@@ -21,7 +20,7 @@ class Hero extends Character {
         console.log(this.emoji + " While i'm here, nothing happens.");
     }
 }
-class Villain extends Character {
+export class Villain extends Character {
     constructor() {
         super(...arguments);
         this.emoji = `\u{1F9DF}`;

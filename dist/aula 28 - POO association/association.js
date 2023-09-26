@@ -1,5 +1,4 @@
-"use strict";
-class Writer {
+export class Writer {
     constructor(_name) {
         this._name = _name;
         this._tool = null;
@@ -16,7 +15,7 @@ class Writer {
         this._tool.write();
     }
 }
-class Tools {
+export class Tools {
     constructor(_name) {
         this._name = _name;
     }
@@ -24,7 +23,7 @@ class Tools {
         return this._name;
     }
 }
-class Pen extends Tools {
+export class Pen extends Tools {
     write() {
         console.log(`pen ${this.name} is writing.`);
     }

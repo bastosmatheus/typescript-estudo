@@ -6,12 +6,12 @@ type Collab = {
   age: number;
 };
 
-class Company {
+export class Company {
   protected collabs: Collab[] = [];
   constructor(private readonly nameCompany: string) {}
 }
 
-class Employee extends Company {
+export class Employee extends Company {
   getEmployee(): void {
     this.collabs.forEach((employee) => {
       console.log(employee);
@@ -40,5 +40,6 @@ company.populateArrayCollabs({
   lastname: "José",
   age: 50,
 });
+
 company.getEmployee();
 console.log(company.showCollabs());

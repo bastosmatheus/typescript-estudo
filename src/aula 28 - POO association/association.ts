@@ -1,4 +1,4 @@
-class Writer {
+export class Writer {
   private _tool: Tools | null = null;
 
   constructor(private _name: string) {}
@@ -18,7 +18,7 @@ class Writer {
   }
 }
 
-abstract class Tools {
+export abstract class Tools {
   constructor(private _name: string) {}
 
   get name(): string {
@@ -28,7 +28,7 @@ abstract class Tools {
   abstract write(): void;
 }
 
-class Pen extends Tools {
+export class Pen extends Tools {
   write(): void {
     console.log(`pen ${this.name} is writing.`);
   }

@@ -1,7 +1,7 @@
 // getters (basicamente, da acesso a uma propriedade dentro de uma classe já instanciada. Mesmo que use private, com o get da p acessar.)
 // existem dois tipos de declaração das funções get e set.
 
-class Game {
+export class Game {
   constructor(
     private nameOfGame: string,
     private yearLaunch: number,
@@ -26,6 +26,7 @@ class Game {
 }
 
 const game = new Game("Valorant", 2020, "FPS");
+
 console.log(game.gameCategory);
 game.gameCategory = "New category";
 game.setGameCategory("First Person Shooter");

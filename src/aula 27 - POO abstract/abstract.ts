@@ -1,6 +1,6 @@
 // classes abstratas só podem ser instanciadas a partir de uma subclasse, é como se fosse um contrato, pós assinado tem que ser cumprido (se herda de character, então tem que existir dentro do projeto).
 
-abstract class Character {
+export abstract class Character {
   protected abstract emoji: string;
 
   constructor(
@@ -21,7 +21,7 @@ abstract class Character {
   abstract shout(): void;
 }
 
-class Hero extends Character {
+export class Hero extends Character {
   protected emoji = `\u{1F9DD}`;
 
   shout(): void {
@@ -29,7 +29,7 @@ class Hero extends Character {
   }
 }
 
-class Villain extends Character {
+export class Villain extends Character {
   protected emoji = `\u{1F9DF}`;
 
   shout(): void {

@@ -1,4 +1,4 @@
-class Person {
+export class Person {
   constructor(
     public name: string,
     public middlename: string,
@@ -19,7 +19,7 @@ class Person {
   }
 }
 
-class Student extends Person {}
+export class Student extends Person {}
 
 const student = new Student("Matheus", "Bastos", 19, "05890410");
 console.log(student);

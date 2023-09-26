@@ -1,5 +1,4 @@
-"use strict";
-class Person {
+export class Person {
     constructor(name, middlename, age, cpf) {
         this.name = name;
         this.middlename = middlename;
@@ -16,7 +15,7 @@ class Person {
         return this.cpf;
     }
 }
-class Student extends Person {
+export class Student extends Person {
 }
 const student = new Student("Matheus", "Bastos", 19, "05890410");
 console.log(student);

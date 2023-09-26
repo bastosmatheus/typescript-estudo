@@ -1,5 +1,4 @@
-"use strict";
-class Product {
+export class Product {
     constructor(_name, _price) {
         this._name = _name;
         this._price = _price;
@@ -11,7 +10,7 @@ class Product {
         return this._price;
     }
 }
-class Cart {
+export class Cart {
     constructor() {
         this.products = [];
     }

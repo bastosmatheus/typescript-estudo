@@ -1,4 +1,4 @@
-class Product {
+export class Product {
   constructor(
     private _name: string,
     private _price: number
@@ -13,7 +13,7 @@ class Product {
   }
 }
 
-class Cart {
+export class Cart {
   private readonly products: Product[] = [];
 
   constructor() {}

@@ -1,12 +1,11 @@
-"use strict";
 // usando o modificador protected (deixa a propriedade visivel para a superclasse e tbm subclasses). Já que o private é apenas visivel dentro da superclasse.
-class Company {
+export class Company {
     constructor(nameCompany) {
         this.nameCompany = nameCompany;
         this.collabs = [];
     }
 }
-class Employee extends Company {
+export class Employee extends Company {
     getEmployee() {
         this.collabs.forEach((employee) => {
             console.log(employee);

@@ -1,6 +1,6 @@
 // Singleton / construtor privado. Nesse exemplo de database, quero criar apenas uma conexão, então não da p deixar as instancias dessa classe usar esse recurso.
 
-class Database {
+export class Database {
   private static database: Database;
 
   private constructor(
