@@ -1,3 +1,5 @@
+// associação = mesmo que sejam relacionadas, as classes são completamentes independentes uma da outra. Escritor pode existir sem ferramentas, assim como ferramentas pode existir sem nenhum escritor.
+
 export class Writer {
   private _tool: Tools | null = null;
 

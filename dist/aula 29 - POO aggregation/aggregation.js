@@ -1,3 +1,4 @@
+// agregação = é um tipo de associação, indicando que uma classe tem relação com alguma outra, não dependendo dessa classe p existir. Pode existir carrinho sem produto, assim como produto existe sem carrinho.
 export class Product {
     constructor(_name, _price) {
         this._name = _name;
