@@ -12,29 +12,23 @@ class Product {
     }
 }
 class Cart {
-    constructor() { }
-    static createCart() {
-        if (Cart.cart) {
-            return `A cart already exists.`;
-        }
-        Cart.cart = new Cart();
-        return `Cart created.`;
+    constructor() {
+        this.products = [];
     }
-    static quantity() {
+    quantity() {
         return this.products.length;
     }
-    static total() {
+    total() {
         return this.products.reduce((acc, product) => acc + product.price, 0);
     }
-    static pushProduct(product) {
+    pushProduct(product) {
         this.products.push(product);
     }
 }
-Cart.products = [];
-const product = new Product("Farofinha", 20.5);
-const productTwo = new Product("Camiseta", 60.0);
-Cart.createCart();
-Cart.pushProduct(product);
-Cart.pushProduct(productTwo);
-console.log(Cart.quantity());
-console.log(Cart.total());
+const cart = new Cart();
+const product = new Product("Farofinha", 9.9);
+const productTwo = new Product("Camiseta", 89.9);
+cart.pushProduct(product);
+cart.pushProduct(productTwo);
+console.log(cart.quantity());
+console.log(cart.total());
