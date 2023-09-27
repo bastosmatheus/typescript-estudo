@@ -12,7 +12,7 @@ type VideoPlayerProtocol = {
 
 // classe video deve ter os métodos play, pause e startevents, por que implementa o type VideoPlayerProtocol. Além de só ser istanciada com um objeto que tenha os atributos do type VideoPlayerElements.
 
-class Video implements VideoPlayerProtocol {
+export class Video implements VideoPlayerProtocol {
   private videoPlayer: HTMLVideoElement;
   private buttonStop: HTMLButtonElement;
   private buttonPlay: HTMLButtonElement;
