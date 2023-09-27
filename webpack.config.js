@@ -3,7 +3,7 @@ import dirname from "path";
 
 export default {
   mode: "development",
-  entry: "./src/aula 19 - exercise/index.ts",
+  entry: "./src/aula 33 - POO interfaces and class/index.ts",
   module: {
     rules: [
       {
